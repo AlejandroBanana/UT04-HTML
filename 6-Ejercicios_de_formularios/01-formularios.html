@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px; 
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        legend {
+            font-weight: bold;
+        }
+        select, input[type="text"], input[type="date"] {
+            margin: 5px 0;
+            padding: 5px;
+        }
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rellenar</h1>
+    
+    <form>
+        <fieldset>
+            <legend>Seleccione un idioma:</legend>
+            <input type="radio" id="idiomaingles" name="idioma" value="idiomaingles">
+            <label for="idiomaingles">Inglés</label><br>
+            
+            <input type="radio" id="idiomaaleman" name="idioma" value="idiomaaleman">
+            <label for="idiomaaleman">Alemán</label><br>
+            
+            <input type="radio" id="idiomafrances" name="idioma" value="idiomafrances">
+            <label for="idiomafrances">Francés</label>
+        </fieldset>
+
+        <div>
+            <label for="conector"><strong>USB</strong></label><br>
+            <select id="conector" name="conector">
+                <option value="usb">USB</option>
+                <option value="paralelo">Paralelo</option>
+                <option value="ps2">PS2</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            
+            <label for="apellidos">Apellidos</label><br>
+            <input type="text" id="apellidos" name="apellidos">
+        </div>
+
+        <hr>
+
+        <div>
+            <label>Indique sus preferencias por favor:</label><br>
+            <select id="sexo" name="sexo" multiple size="2">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="checkbox" id="sexomujer" name="sexo" value="sexomujer">
+            <label for="sexomujer">Mujer</label><br>
+            
+            <input type="checkbox" id="sexohombre" name="sexo" value="sexohombre">
+            <label for="sexohombre">Hombre</label>
+        </div>
+
+        <div>
+            <label>Elija una fecha: <strong>dd / mm / aaaa</strong></label><br>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+    </form>
+</body>
+</html>

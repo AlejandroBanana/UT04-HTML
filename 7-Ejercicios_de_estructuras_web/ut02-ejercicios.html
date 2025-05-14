@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Sitio Web</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    header, nav, section, article, aside, footer, main {
+      border: 1px solid #000;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      text-align: right;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .categorias {
+      margin-top: 10px;
+      padding: 10px;
+    }
+
+    .categorias span {
+      margin-right: 15px;
+    }
+
+    #articulos {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .articulo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .articulo img {
+      width: 150px;
+      height: auto;
+    }
+
+    .articulo.derecha {
+      flex-direction: row-reverse;
+    }
+
+    section#frase {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    #sabias-contacto {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #sabias-contacto section, #sabias-contacto aside {
+      width: 48%;
+    }
+
+    .imagenes-inferiores {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15px;
+    }
+
+    .imagenes-inferiores img {
+      width: 200px;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+
+    <header>
+      <h1>Mi Sitio Web</h1>
+      <nav>
+        <a href="#sobrenosotros">Sobre nosotros</a> |
+        <a href="#blog">Blog</a> |
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <section class="categorias">
+        <span>Categoría 1</span>
+        <span>Categoría 2</span>
+        <span>Categoría 3</span>
+        <span>Categoría 4</span>
+      </section>
+    </header>
+
+    <section id="section1">
+        <h2 id="blog">Seccion 1</h2>
+      <section id="articulos">
+        <article class="articulo">
+          <img src="foto.png" alt="Imagen 1">
+          <div>
+            <h3>Artículo 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>+ info</button>
+          </div>
+        </article>
+
+        <article class="articulo derecha">
+          <img src="foto.png" alt="Imagen 2">
+          <div>
+            <h3>Artículo 2</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <button>+ info</button>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <section id="frase">
+      Personas que conectan con personas
+    </section>
+
+    <section id="seccion3">
+      <section id="sabias-contacto">
+        <section>
+          <h3 id="sobrenosotros">Sabías que...</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+
+        <aside id="contacto">
+          <h3>Contacto</h3>
+          <p>Dirección: Una dirección inventada, Barcelona</p>
+          <p>Teléfono: 932 123 123</p>
+          <p>Horario:</p>
+          <ul>
+            <li>Lu - Vie 09:00 - 13:00</li>
+            <li>Lu - Vie 16:00 - 19:30</li>
+            <li>Sábado: 09:00 - 13:00</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="imagenes-inferiores">
+        <img src="foto.png" alt="Imagen inferior 1">
+        <img src="foto.png" alt="Imagen inferior 2">
+      </section>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 - Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>

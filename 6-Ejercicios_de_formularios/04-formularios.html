@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        legend {
+            font-weight: bold;
+        }
+        textarea {
+            width: 450px;
+            height: 100px;
+            margin: 5px 0;
+        }
+        select {
+            margin: 5px 0;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rellenar</h1>
+    
+    <form>
+        <fieldset>
+            <legend>Seleccione una asignatura:</legend>
+            <input type="radio" id="asignaturalengua" name="asignatura" value="asignaturalengua">
+            <label for="asignaturalengua">Lengua</label><br>
+            
+            <input type="radio" id="asignaturamatematicas" name="asignatura" value="asignaturamatematicas">
+            <label for="asignaturamatematicas">Matemáticas</label><br>
+            
+            <input type="radio" id="asignaturahistoria" name="asignatura" value="asignaturahistoria">
+            <label for="asignaturahistoria">Historia</label><br>
+            
+            <input type="radio" id="asignaturageografia" name="asignatura" value="asignaturageografia">
+            <label for="asignaturageografia">Geografía</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Seleccione editores:</legend>
+            <input type="checkbox" id="editornotepad" name="editor" value="editornotepad">
+            <label for="editornotepad">Notepad</label>
+            
+            <input type="checkbox" id="editoremacs" name="editor" value="editoremacs">
+            <label for="editoremacs">Emacs</label>
+            
+            <input type="checkbox" id="editorotro" name="editor" value="editorotro">
+            <label for="editorotro">Otro</label>
+        </fieldset>
+
+        <div>
+            <label for="comentario">Escriba aquí, por favor</label><br>
+            <textarea id="comentario" name="comentario" rows="5" cols="59">Escriba aquí, por favor</textarea>
+        </div>
+
+        <div>
+            <label for="procesador"><strong>AMD</strong></label><br>
+            <select id="procesador" name="procesador">
+                <option value="amd">AMD</option>
+                <option value="intel_i5">Intel i5</option>
+                <option value="intel_i7">Intel i7</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>

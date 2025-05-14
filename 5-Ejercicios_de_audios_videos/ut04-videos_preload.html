@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <h1>Vídeo con preload="metadata"</h1>
+    
+    <video width="320" height="240" controls preload="metadata">
+        <source src="La Pantera - QUE HAGO (Vídeo Oficial).mp4" type="video/mp4">
+    </video>
+    
+    <p>Con preload="metadata", el navegador solo carga los metadatos del vídeo (duración, dimensiones, pista de texto) cuando se carga la página, pero no carga el vídeo completo hasta que el usuario lo solicita.</p>
+    
+    <h2>Otros valores para preload:</h2>
+    <ul>
+        <li><strong>auto</strong>: El navegador puede decidir cargar el vídeo completo automáticamente.</li>
+        <li><strong>none</strong>: El navegador no carga el vídeo hasta que el usuario lo solicita.</li>
+    </ul>
+</body>
+</html>

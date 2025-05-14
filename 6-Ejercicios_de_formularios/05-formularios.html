@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        input[type="text"], textarea {
+            margin: 5px 0;
+            padding: 5px;
+        }
+        textarea {
+            width: 400px;
+            height: 80px;
+        }
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+        .file-input {
+            margin: 10px 0;
+        }
+        .checkbox-group, .radio-group {
+            margin: 10px 0;
+        }
+        select[multiple] {
+            height: auto;
+            min-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Completar</h1>
+    
+    <form>
+        <div>
+            <label for="color">Elija un color:</label><br>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <div>
+            <label for="nombre1">Nombre</label><br>
+            <input type="text" id="nombre1" name="nombre"><br>
+            
+            <label for="apellidos1">Apellidos</label><br>
+            <input type="text" id="apellidos1" name="apellidos"><br>
+            
+            <label for="telefono">Telefono</label><br>
+            <input type="text" id="telefono" name="telefono">
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="asignaturalengua" name="asignatura" value="asignaturalengua">
+            <label for="asignaturalengua">Lengua</label>
+            
+            <input type="checkbox" id="asignaturamatematicas" name="asignatura" value="asignaturamatematicas">
+            <label for="asignaturamatematicas">Matemáticas</label>
+            
+            <input type="checkbox" id="asignaturahistoria" name="asignatura" value="asignaturahistoria">
+            <label for="asignaturahistoria">Historia</label>
+            
+            <input type="checkbox" id="asignaturageografia" name="asignatura" value="asignaturageografia">
+            <label for="asignaturageografia">Geografía</label>
+        </div>
+
+        <div class="file-input">
+            <label for="archivo1">Elija un fichero:</label><br>
+            <input type="file" id="archivo1" name="archivo1">
+            <span>No se ha seleccionado ningún archivo</span>
+        </div>
+
+        <!-- Textarea -->
+        <div>
+            <label for="comentario">Utilice este cuadro para escribir</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="57">Utilice este cuadro para escribir</textarea>
+        </div>
+
+        <hr>
+
+        <!-- Radio buttons para formato -->
+        <h2>JPG</h2>
+        <div class="radio-group">
+            <input type="radio" id="formatojpg" name="formato" value="formatojpg">
+            <label for="formatojpg">JPG</label>
+            
+            <input type="radio" id="formatopng" name="formato" value="formatopng">
+            <label for="formatopng">PNG</label>
+        </div>
+
+        <div>
+            <strong>Completar</strong><br>
+            <label for="nombre2">Nombre</label><br>
+            <input type="text" id="nombre2" name="nombre"><br>
+            
+            <label for="apellidos2">Apellidos</label><br>
+            <input type="text" id="apellidos2" name="apellidos"><br>
+            
+            <label for="direccion">Dirección</label><br>
+            <input type="text" id="direccion" name="direccion">
+        </div>
+
+        <div>
+            <label for="fecha">Elija una fecha: dd / mm / aaaa</label><br>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+
+        <div>
+            <label for="conector">Seleccione conectores:</label><br>
+            <select id="conector" name="conector" multiple>
+                <option value="usb">USB</option>
+                <option value="paralelo">Paralelo</option>
+                <option value="ps2">PS2</option>
+            </select>
+        </div>
+
+        <div class="file-input">
+            <label for="archivo2">Elija un fichero:</label><br>
+            <input type="file" id="archivo2" name="archivo2">
+        </div>
+    </form>
+</body>
+</html>

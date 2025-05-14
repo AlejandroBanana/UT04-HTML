@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.2em;
+            margin: 15px 0 10px 0;
+        }
+        h3 {
+            font-size: 1.1em;
+            margin: 15px 0 10px 0;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        textarea {
+            width: 400px;
+            height: 100px;
+            margin: 5px 0;
+        }
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+        .file-input {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Completar</h1>
+    
+    <form>
+        <div>
+            <label for="color">Elija un color:</label><br>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <div>
+            <label for="comentario">Por favor, escriba aquí</label><br>
+            <textarea id="comentario" name="comentario" rows="5" cols="53">Por favor, escriba aquí</textarea>
+        </div>
+
+        <hr>
+
+        <h2>Java</h2>
+        <div>
+            <label for="lenguaje">Seleccione un lenguaje:</label><br>
+            <select id="lenguaje" name="lenguaje">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="html">HTML</option>
+                <option value="visual_basic">Visual Basic</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="checkbox" id="cicloasir" name="ciclo" value="cicloasir">
+            <label for="cicloasir">ASIR</label>
+            
+            <input type="checkbox" id="ciclodam" name="ciclo" value="ciclodam">
+            <label for="ciclodam">DAM</label>
+            
+            <input type="checkbox" id="ciclodaw" name="ciclo" value="ciclodaw">
+            <label for="ciclodaw">DAW</label>
+        </div>
+
+        <hr>
+
+        <h3>Rellene las opciones siguientes</h3>
+
+        <div>
+            <label for="fecha">Elija una fecha: dd / mm / aaaa</label><br>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+
+        <div class="file-input">
+            <label for="archivo">Elija un fichero:</label><br>
+            <input type="file" id="archivo" name="archivo">
+            <span>No se ha seleccionado ningún archivo</span>
+        </div>
+
+        <div>
+            <label for="ciclos">Seleccione ciclos:</label><br>
+            <select id="ciclos" name="ciclo" multiple size="4">
+                <option value="smir">SMIR</option>
+                <option value="asir">ASIR</option>
+                <option value="dam">DAM</option>
+                <option value="daw">DAW</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
